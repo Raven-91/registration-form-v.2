@@ -1,0 +1,339 @@
+/*</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>=====================================================================================*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside,
+section {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+    position: relative;
+    width: 100%;
+}
+
+body {
+    line-height: 1;
+    font-family: Nunito, sans-serif;
+    font-size: 16px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    background: #FFFFFB;
+}
+
+body.lock {
+    overflow: hidden;
+}
+
+input,
+button,
+textarea {
+    font-family: Nunito, sans-serif;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    /*vertical-align: bottom;*/
+    vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+/*</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>=====================================================================================*/
+/*</ПОДКЛЮЧЕНИЕ ШРИФТОВ>============================================================================================*/
+@font-face {
+    font-family: Nunito;
+    src: url('../fonts/Nunito-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: Nunito;
+    src: url('../fonts/Nunito-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+/*</ПОДКЛЮЧЕНИЕ ШРИФТОВ>============================================================================================*/
+/*</ОБOЛОЧКА>=======================================================================================================*/
+/*</ОБOЛОЧКА>=======================================================================================================*/
+/*</ОСНОВНАЯ СЕТКА>=================================================================================================*/
+/*</ОСНОВНАЯ СЕТКА>=================================================================================================*/
+/*</MAIN>===========================================================================================================*/
+.main {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    position: absolute;
+    top: 39px;
+    left: calc(50% - 131px);
+}
+
+.logo__img {
+    width: 262px;
+}
+
+.main__left-part,
+.main__right-part {
+    flex-basis: 50%;
+    padding: 198px 0 191px 0;
+    display: flex;
+}
+
+.main__left-part {
+    justify-content: right;
+}
+
+.container {
+    max-width: 600px;
+}
+
+.main__container-left,
+.main__container-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main__container-left {
+    padding: 0 85px 0 63px;
+}
+
+.main__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.main__info {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: #636363;
+    margin-bottom: 69px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 44px;
+}
+
+.form__label {
+    font-weight: 700;
+    line-height: 25px;
+    color: #C6C6C4;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.form__input {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #323232;
+}
+
+.form__label:after {
+    content: '';
+    width: 100%;
+    border: 1px solid #C6C6C4;
+}
+
+.form__label:nth-child(5){
+    margin-bottom: 30px;
+}
+
+.form__label-checkbox {
+    font-weight: 700;
+    line-height: 25px;
+    color: #636363;
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.agree {
+    font-weight: 700;
+    line-height: 25px;
+    color: #636363;
+}
+
+.form__action {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    background-color: #DD3142;
+    border-radius: 40px;
+    width: 210px;
+    padding: 23px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.account {
+    display: flex;
+    justify-content: center;
+}
+
+.account__link {
+    font-weight: 700;
+    line-height: 25px;
+    color: #636363;
+}
+
+.main__right-part {
+    background: #F8F8FA;
+    justify-content: left;
+}
+
+.main__container-right {
+    padding: 0 46px 0 11px;
+}
+
+.popup-container {
+    background-color: rgba(248, 248, 250, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: none;
+}
+
+.popup {
+    padding: 40px;
+    background-color: #31393f;
+    margin: 0 auto;
+    width: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    border: 1px solid #31393f;
+    border-radius: 10px;
+    top: calc(50% - 135px);
+    left: calc(50% - 290px);
+}
+
+.popup-info {
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    max-width: 540px;;
+}
+
+/*.popup-close {*/
+/*    width: 50px;*/
+/*    height: 50px;*/
+/*    border-radius: 50%;*/
+/*    background-color: #DD3142;*/
+/*    cursor: pointer;*/
+
+/*    position: absolute;*/
+/*    top: -25px;*/
+/*    right: -25px;*/
+/*}*/
+
+/*.close {*/
+/*    position: relative;*/
+/*}*/
+
+/*.close:before,*/
+/*.close:after {*/
+/*    content: '';*/
+/*    display: block;*/
+/*    width: 30px;*/
+/*    height: 4px;*/
+/*    background-color: #fff;*/
+
+/*    position: absolute;*/
+/*    top: 22px;*/
+/*    left: 10px;*/
+/*}*/
+
+/*.close:before {*/
+/*    transform: rotate(-45deg);*/
+/*}*/
+
+/*.close:after {*/
+/*    transform: rotate(45deg);*/
+/*}*/
+/*</ОСНОВНАЯ СЕТКА>=================================================================================================*/
