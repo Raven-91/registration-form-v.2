@@ -8,21 +8,15 @@ window.onload = function () {
     let checkbox = document.getElementById('checkbox'); // Получаем checkbox
     let accountEntry = document.getElementsByClassName('account__link')[0]; // Получаем вход через уже зарег аккаунт
 
-    // ==== № 2 ====
-
     inputFullName.addEventListener('input', function (e) {
         e.target.value = e.target.value.replace(/[0-9]/g, '');
 
         console.log(e.target.value)
     }) // запрет на ввод цифр
 
-    // ==== № 3 ====
-
     inputUserName.addEventListener('input', function (e) {
         e.target.value = e.target.value.replace(/[. ,]/g, '');
     }) // запрет на ввод точек и запятых
-
-    // ==== № 4 ====
 
     checkbox.onclick = () => {
         if (checkbox.checked) {
@@ -31,8 +25,6 @@ window.onload = function () {
             console.log('Не согласен');
         }
     }
-
-    // ==== № 5 ====
 
     let button = document.getElementById('button');
 
@@ -91,8 +83,6 @@ window.onload = function () {
             entryToAccount(e);
         });
     }
-
-    // ==== № 6 ====
 
     function entryToAccount() {
         document.getElementById('form').reset();
