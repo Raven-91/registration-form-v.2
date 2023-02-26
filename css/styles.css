@@ -323,15 +323,14 @@ h6 {
 /*    width: 30px;*/
 /*    height: 4px;*/
 /*    background-color: #fff;*/
-
 /*    position: absolute;*/
 /*    top: 22px;*/
 /*    left: 10px;*/
 /*}*/
 
-/*.close:before {*/
-/*    transform: rotate(-45deg);*/
-/*}*/
+.close:before {
+    transform: rotate(-45deg);
+}
 
 /*.close:after {*/
 /*    transform: rotate(45deg);*/
