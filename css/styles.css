@@ -316,17 +316,17 @@ h6 {
     position: relative;
 }
 
-/*.close:before,*/
-/*.close:after {*/
-/*    content: '';*/
-/*    display: block;*/
-/*    width: 30px;*/
-/*    height: 4px;*/
-/*    background-color: #fff;*/
-/*    position: absolute;*/
-/*    top: 22px;*/
-/*    left: 10px;*/
-/*}*/
+.close:before,
+.close:after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    position: absolute;
+    top: 22px;
+    left: 10px;
+}
 
 .close:before {
     transform: rotate(-45deg);
