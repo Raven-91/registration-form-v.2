@@ -7,6 +7,7 @@ window.onload = function () {
     let inputRepeatPassword = document.getElementById('repeatPassword'); // Получаем input по проверке Password
     let checkbox = document.getElementById('checkbox'); // Получаем checkbox
     let accountEntry = document.getElementsByClassName('account__link')[0]; // Получаем вход через уже зарег аккаунт
+    let newVariable;
 
     inputFullName.addEventListener('input', function (e) {
         e.target.value = e.target.value.replace(/[0-9]/g, '');
