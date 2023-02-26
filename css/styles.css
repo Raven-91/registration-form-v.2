@@ -182,6 +182,7 @@ h6 {
     display: flex;
     flex-direction: column;
     margin-bottom: 44px;
+    position: relative;
 }
 
 .form__label {
