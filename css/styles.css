@@ -312,9 +312,9 @@ h6 {
     right: -25px;
 }
 
-/*.close {*/
-/*    position: relative;*/
-/*}*/
+.close {
+    position: relative;
+}
 
 /*.close:before,*/
 /*.close:after {*/
