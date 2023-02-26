@@ -183,6 +183,7 @@ h6 {
     flex-direction: column;
     margin-bottom: 44px;
     position: relative;
+    font-family: Nunito, sans-serif;
 }
 
 .form__label {
